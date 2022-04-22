@@ -7,6 +7,8 @@ from .models import Article
 from .forms import CommentForm
 from django.views import View
 
+# new line of comment
+
 class ArticleListView(LoginRequiredMixin,ListView):
 	model = Article
 	template_name = "article_list.html"
